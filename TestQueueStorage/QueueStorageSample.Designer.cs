@@ -1,6 +1,6 @@
 ﻿namespace TestQueueStorage
 {
-    partial class Form1
+    partial class QueueStorageSample
     {
         /// <summary>
         /// Variabile di progettazione necessaria.
@@ -31,11 +31,12 @@
             this.lblQueueName = new System.Windows.Forms.Label();
             this.txtQueueName = new System.Windows.Forms.TextBox();
             this.btnQueueName = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnMessage = new System.Windows.Forms.Button();
+            this.txtMessage = new System.Windows.Forms.TextBox();
+            this.lblMessage = new System.Windows.Forms.Label();
+            this.btnPick = new System.Windows.Forms.Button();
+            this.btnGetMessage = new System.Windows.Forms.Button();
+            this.btnOpenF2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblQueueName
@@ -58,68 +59,83 @@
             // 
             this.btnQueueName.Location = new System.Drawing.Point(13, 57);
             this.btnQueueName.Name = "btnQueueName";
-            this.btnQueueName.Size = new System.Drawing.Size(75, 23);
+            this.btnQueueName.Size = new System.Drawing.Size(97, 23);
             this.btnQueueName.TabIndex = 2;
-            this.btnQueueName.Text = "button1";
+            this.btnQueueName.Text = "Create Queue";
             this.btnQueueName.UseVisualStyleBackColor = true;
+            this.btnQueueName.Click += new System.EventHandler(this.btnQueueName_Click);
             // 
-            // button2
+            // btnMessage
             // 
-            this.button2.Location = new System.Drawing.Point(10, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMessage.Location = new System.Drawing.Point(10, 149);
+            this.btnMessage.Name = "btnMessage";
+            this.btnMessage.Size = new System.Drawing.Size(100, 23);
+            this.btnMessage.TabIndex = 5;
+            this.btnMessage.Text = "Accode Msg";
+            this.btnMessage.UseVisualStyleBackColor = true;
+            this.btnMessage.Click += new System.EventHandler(this.btnMessage_Click);
             // 
-            // textBox2
+            // txtMessage
             // 
-            this.textBox2.Location = new System.Drawing.Point(10, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtMessage.Location = new System.Drawing.Point(10, 122);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(100, 20);
+            this.txtMessage.TabIndex = 4;
             // 
-            // label2
+            // lblMessage
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(10, 105);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(50, 13);
+            this.lblMessage.TabIndex = 3;
+            this.lblMessage.Text = "Message";
             // 
-            // button3
+            // btnPick
             // 
-            this.button3.Location = new System.Drawing.Point(10, 178);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnPick.Location = new System.Drawing.Point(10, 178);
+            this.btnPick.Name = "btnPick";
+            this.btnPick.Size = new System.Drawing.Size(100, 23);
+            this.btnPick.TabIndex = 6;
+            this.btnPick.Text = "Pick next message";
+            this.btnPick.UseVisualStyleBackColor = true;
+            this.btnPick.Click += new System.EventHandler(this.btnPick_Click);
             // 
-            // button4
+            // btnGetMessage
             // 
-            this.button4.Location = new System.Drawing.Point(10, 207);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnGetMessage.Location = new System.Drawing.Point(10, 207);
+            this.btnGetMessage.Name = "btnGetMessage";
+            this.btnGetMessage.Size = new System.Drawing.Size(100, 23);
+            this.btnGetMessage.TabIndex = 7;
+            this.btnGetMessage.Text = "Get Message";
+            this.btnGetMessage.UseVisualStyleBackColor = true;
+            this.btnGetMessage.Click += new System.EventHandler(this.btnGetMessage_Click);
             // 
-            // Form1
+            // btnOpenF2
+            // 
+            this.btnOpenF2.Location = new System.Drawing.Point(172, 82);
+            this.btnOpenF2.Name = "btnOpenF2";
+            this.btnOpenF2.Size = new System.Drawing.Size(100, 23);
+            this.btnOpenF2.TabIndex = 8;
+            this.btnOpenF2.Text = "Open Table";
+            this.btnOpenF2.UseVisualStyleBackColor = true;
+            this.btnOpenF2.Click += new System.EventHandler(this.btnOpenF2_Click);
+            // 
+            // QueueStorageSample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnOpenF2);
+            this.Controls.Add(this.btnGetMessage);
+            this.Controls.Add(this.btnPick);
+            this.Controls.Add(this.btnMessage);
+            this.Controls.Add(this.txtMessage);
+            this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnQueueName);
             this.Controls.Add(this.txtQueueName);
             this.Controls.Add(this.lblQueueName);
-            this.Name = "Form1";
+            this.Name = "QueueStorageSample";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,11 +147,12 @@
         private System.Windows.Forms.Label lblQueueName;
         private System.Windows.Forms.TextBox txtQueueName;
         private System.Windows.Forms.Button btnQueueName;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnMessage;
+        private System.Windows.Forms.TextBox txtMessage;
+        private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Button btnPick;
+        private System.Windows.Forms.Button btnGetMessage;
+        private System.Windows.Forms.Button btnOpenF2;
     }
 }
 
