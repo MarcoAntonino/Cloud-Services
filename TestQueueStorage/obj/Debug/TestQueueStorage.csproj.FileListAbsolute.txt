@@ -1,0 +1,1 @@
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestQueueStorage\bin\Debug\TestQueueStorage.exe.config
