@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.Storage.Table;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace TestQueueStorage
 {
@@ -19,5 +21,7 @@ namespace TestQueueStorage
         public string Email { get; set; }
 
         public string PhoneNumber { get; set; }
+        public string PartitionKey { get; private set; }
+        public string RowKey { get; private set; }
     }
 }
