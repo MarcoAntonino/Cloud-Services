@@ -60,8 +60,7 @@ namespace TestQueueStorage
             // Print the fields for each customer.
             foreach (CustomerEntity entity in table.ExecuteQuery(query))
             {
-                sb.Append("{0}, {1}\t{2}\t{3}\r\n", entity.PartitionKey, entity.RowKey,
-                    entity.Email, entity.PhoneNumber);
+                sb.Append(String.Format("{0}, {1}\t{2}\t{3}\r\n", entity.PartitionKey, entity.RowKey, entity.Email, entity.PhoneNumber));
             }
             txtList.Text = sb.ToString();
         }

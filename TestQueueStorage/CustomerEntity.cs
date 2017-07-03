@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace TestQueueStorage
 {
+    /*
+     * È una classe POCO perchè ha solo delle proprietà e nessun metodo
+     */
     class CustomerEntity : TableEntity
     {
         public CustomerEntity(string lastName, string firstName)

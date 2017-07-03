@@ -1,0 +1,15 @@
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\CosmosDB.exe.config
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\DocumentDB.Spatial.Sql.dll
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\CosmosDB.exe
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\CosmosDB.pdb
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\Microsoft.Azure.Documents.Client.dll
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\Newtonsoft.Json.dll
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\Microsoft.Azure.Documents.Client.xml
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\bin\Debug\Newtonsoft.Json.xml
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\obj\Debug\CosmosDB.csprojResolveAssemblyReference.cache
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\obj\Debug\CosmosDB.CosmosTest.resources
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\obj\Debug\CosmosDB.Properties.Resources.resources
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\obj\Debug\CosmosDB.csproj.GenerateResource.Cache
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\obj\Debug\CosmosDB.exe
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\CosmosDB\obj\Debug\CosmosDB.pdb
