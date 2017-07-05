@@ -1,0 +1,11 @@
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\bin\Debug\SharedBlackBoard.exe.config
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\bin\Debug\SharedBlackBoard.exe
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\bin\Debug\SharedBlackBoard.pdb
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\obj\Debug\SharedBlackBoard.SharedBlackBoard.resources
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\obj\Debug\SharedBlackBoard.Properties.Resources.resources
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\obj\Debug\SharedBlackBoard.csproj.GenerateResource.Cache
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\obj\Debug\SharedBlackBoard.exe
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\obj\Debug\SharedBlackBoard.pdb
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\obj\Debug\SharedBlackBoard.csprojResolveAssemblyReference.cache
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\bin\Debug\Microsoft.ServiceBus.dll
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\SharedBlackBoard\bin\Debug\Microsoft.ServiceBus.xml
