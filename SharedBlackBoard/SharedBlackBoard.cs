@@ -20,7 +20,7 @@ namespace SharedBlackBoard
 
         int oldX, oldY;
         string connectionString = "Endpoint=sb://avsbtest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=W504rGVBUid1FkOSVj3s8eYyO5NT1AhYZm/afvpXEIM=";
-        string queueName = "myTestSBqueue";
+        string queueName = "05"; //myTestSBqueue
         /*Queste due ultime variabili sono state fornite da Azure.
          * Bisognerebbe metterle in file di config e magari criptarle
          */
@@ -43,12 +43,12 @@ namespace SharedBlackBoard
                     le.y2 = oldY;
                     le.color = txtColor.Text;
                     Lines.Add(le);
-                    if (Lines.Count==50)
+                    if (Lines.Count == 50)
                     {
                         SendLines(Lines);
                         Lines.Clear();
                     }
-                    //SendLine(e.X, e.Y, oldX, oldY, txtColor.Text);
+                    SendLine(e.X, e.Y, oldX, oldY, txtColor.Text);
                 }
                 oldX = e.X;
                 oldY = e.Y;
@@ -79,14 +79,14 @@ namespace SharedBlackBoard
             BrokeredMessage message = new BrokeredMessage(x1.ToString() + "," + y1.ToString() + "," + x2.ToString() + "," + y2.ToString() + "," + color);
             client.Send(message);
         }
-
+        
         private void DrawLine(int x1, int y1, int x2, int y2, string color)
         {
             Color c = System.Drawing.ColorTranslator.FromHtml(color);
             Graphics g = pictBlckBrd.CreateGraphics();
             g.DrawLine(new Pen(c,2), x1, y1, x2, y2);
             g.Dispose();
-            /*Se io no nmettessi dispose, la variabile g uscirebbe dal suo scope e diventerebbe garbage e quindi finirebbe nel garbage collector ma data la pigrizia del GC, è meglio sganciare subito la risorsa fisica subito. Se non lo mettessi, sarebbe poi compito dei GC liberare la memoria occupata dall'oggetto ma in un momento determinato a priori. Con il rischio di saturare la memoria grafica.
+            /*Se io non mettessi dispose, la variabile g uscirebbe dal suo scope e diventerebbe garbage e quindi finirebbe nel garbage collector ma data la pigrizia del GC, è meglio sganciare subito la risorsa fisica subito. Se non lo mettessi, sarebbe poi compito dei GC liberare la memoria occupata dall'oggetto ma in un momento determinato a priori. Con il rischio di saturare la memoria grafica.
              * Si potrebbe wrappare nello using anche.
              */
             
@@ -97,6 +97,12 @@ namespace SharedBlackBoard
             if (chkSend.Checked)
             {
                 chkReceive.Checked = false; //fai occhio che l'evento di default, cioè cambia lo status, si scatena
+                //timer1.Enabled = true;
+            }
+            else
+            {
+               // timer1.Enabled = false;
+
             }
         }
 
@@ -150,6 +156,26 @@ namespace SharedBlackBoard
 
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Lines.Count > 0)
+            {
+                SendLines(Lines);
+                Lines.Clear();
+                timer1.Enabled = false;
+
+            }
+        }
+
+        private void pictBlckBrd_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) //.Left è un enum
+            {
+                timer1.Enabled = true;
+
+            }
+        }
+
         /*
             * Due parametri
             * semnder: l'oggetto che ha generato l'evento
@@ -162,6 +188,8 @@ namespace SharedBlackBoard
             {
                 oldX = e.X;
                 oldY = e.Y;
+                timer1.Enabled = false;
+
             }
 
         }

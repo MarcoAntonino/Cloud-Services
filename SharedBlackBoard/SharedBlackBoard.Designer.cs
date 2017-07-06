@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictBlckBrd = new System.Windows.Forms.PictureBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.chkSend = new System.Windows.Forms.CheckBox();
             this.chkReceive = new System.Windows.Forms.CheckBox();
             this.lblColor = new System.Windows.Forms.Label();
             this.txtColor = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictBlckBrd)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +53,7 @@
             this.pictBlckBrd.TabStop = false;
             this.pictBlckBrd.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictBlckBrd_MouseDown);
             this.pictBlckBrd.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictBlckBrd_MouseMove);
+            this.pictBlckBrd.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictBlckBrd_MouseUp);
             // 
             // btnClear
             // 
@@ -105,6 +108,11 @@
             this.txtColor.TabIndex = 6;
             this.txtColor.Text = "#FF0000";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // SharedBlackBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,6 +140,7 @@
         private System.Windows.Forms.CheckBox chkReceive;
         private System.Windows.Forms.Label lblColor;
         private System.Windows.Forms.TextBox txtColor;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

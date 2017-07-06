@@ -1,0 +1,8 @@
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\bin\Debug\TestSQLAzure.exe.config
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\bin\Debug\TestSQLAzure.exe
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\bin\Debug\TestSQLAzure.pdb
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\obj\Debug\TestSQLAzure.TestSQLAzure.resources
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\obj\Debug\TestSQLAzure.Properties.Resources.resources
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\obj\Debug\TestSQLAzure.csproj.GenerateResource.Cache
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\obj\Debug\TestSQLAzure.exe
+C:\Users\antoninom\documents\visual studio 2015\Projects\TestContainer\TestSQLAzure\obj\Debug\TestSQLAzure.pdb
