@@ -1,0 +1,9 @@
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\bin\Debug\ComputerVisionAPIsample.exe.config
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\bin\Debug\ComputerVisionAPIsample.exe
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\bin\Debug\ComputerVisionAPIsample.pdb
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\obj\Debug\ComputerVisionAPIsample.csprojResolveAssemblyReference.cache
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\obj\Debug\ComputerVisionAPIsample.TestComputerVision.resources
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\obj\Debug\ComputerVisionAPIsample.Properties.Resources.resources
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\obj\Debug\ComputerVisionAPIsample.csproj.GenerateResource.Cache
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\obj\Debug\ComputerVisionAPIsample.exe
+C:\Users\antoninom\Documents\Visual Studio 2015\Projects\TestContainer\ComputerVisionAPIsample\obj\Debug\ComputerVisionAPIsample.pdb
